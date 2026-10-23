@@ -1,0 +1,9 @@
+{
+  "name": "Retail Operations Management Study Hub",
+  "short_name": "Study Hub",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#312e81",
+  "icons": []
+}
