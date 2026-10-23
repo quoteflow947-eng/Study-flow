@@ -3,52 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retail Operations Management 1 — Student Study & Quiz Hub</title>
+    <title>Retail Business Management Study App</title>
+    <meta name="theme-color" content="#2563eb">
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.webmanifest">
-    <meta name="theme-color" content="#312e81">
 </head>
 <body>
-
-    <!-- Navigation Header -->
     <header>
-        <div class="header-container">
-            <h1>🛒 Retail Operations Management 1 — Study Hub</h1>
-            <nav id="nav-menu">
-                <button onclick="switchChapter('ch6_1')" id="nav-ch6_1" class="active">Ch 6.1: Entrepreneurship</button>
-                <button onclick="switchChapter('ch6_2')" id="nav-ch6_2">Ch 6.2: Business Plan</button>
-                <button onclick="switchChapter('ch7')" id="nav-ch7">Ch 7: Control</button>
-                <button onclick="switchChapter('ch8')" id="nav-ch8">Ch 8: Leadership Styles</button>
-                <button onclick="switchChapter('ch9')" id="nav-ch9">Ch 9: Leadership Theories</button>
-                <button onclick="switchChapter('ch10')" id="nav-ch10">Ch 10: Motivation</button>
-                <button onclick="switchChapter('ch11')" id="nav-ch11">Ch 11: Stakeholders</button>
-                <button onclick="switchChapter('ch12')" id="nav-ch12">Ch 12: Assets & Risks</button>
-                <button onclick="switchChapter('ch13')" id="nav-ch13">Ch 13: Health & Safety</button>
-            </nav>
-        </div>
+        <h1>Retail Business Management</h1>
+        <nav>
+            <button id="btn-notes" class="active">Study Notes</button>
+            <button id="btn-quiz">Take Quiz</button>
+        </nav>
     </header>
 
-    <!-- Main Content Container -->
-    <main id="chapter-view">
-        <!-- Dynamically rendered via app.js -->
+    <main>
+        <!-- NOTES SECTION -->
+        <section id="notes-section">
+            <div class="chapter">
+                <h2>Chapter 6 (Part 1): Entrepreneurship & Feasibility</h2>
+                <h3>Importance of Entrepreneurship:</h3>
+                <ul>
+                    <li>Job creation lowers unemployment via small and medium enterprises.</li>
+                    <li>Driving innovation introduces new products and technologies.</li>
+                    <li>Economic growth contributes to Gross Domestic Product (GDP) expansion.</li>
+                    <li>Social problem solving addresses healthcare and energy gaps.</li>
+                    <li>Encouraging self-reliance fosters financial independence.</li>
+                </ul>
+                <h3>Challenges in SA Entrepreneurship:</h3>
+                <ul>
+                    <li>High unemployment and low disposable income limit market size.</li>
+                    <li>Bureaucracy and red tape create administrative delays.</li>
+                    <li>Crime and safety concerns increase security operating costs.</li>
+                    <li>Limited access to funding makes securing startup capital difficult.</li>
+                    <li>Skills gaps result from educational system limitations.</li>
+                    <li>Market access difficulties hinder entering larger supply chains.</li>
+                    <li>Lack of mentorship leads to poor decision-making.</li>
+                </ul>
+                <h3>Definition of an Entrepreneur:</h3>
+                <ul>
+                    <li>An entrepreneur identifies market opportunities and gathers resources.</li>
+                    <li>They create and grow a business venture to satisfy needs.</li>
+                    <li>They assume risks and earn profits upon success.</li>
+                </ul>
+                <h3>Top South African Entrepreneurs:</h3>
+                <ul>
+                    <li>Elon Musk has a net worth of US $22.2 billion and founded PayPal, Tesla, and SpaceX.</li>
+                    <li>Christo Wiese is associated with Pepkor and ShopRite.</li>
+                    <li>Patrice Motsepe leads Future Mining and African Rainbow Minerals.</li>
+                    <li>Bonang Matheba owns Bonang Matheba Entertainment.</li>
+                </ul>
+                <h3>Entrepreneur Characteristics:</h3>
+                <ul>
+                    <li>Innovative creation of new ideas, Risk-taker for goal achievement, Self-confident in personal abilities.</li>
+                    <li>Hardworking and dedicated, Goal-oriented focus, Leadership skills to guide others.</li>
+                    <li>Decision-making ability, Persistent despite setbacks, Adaptable to environmental changes.</li>
+                    <li>Good problem solver, Creative thinking, Organized resource management.</li>
+                </ul>
+                <h3>Feasibility vs. Viability:</h3>
+                <ul>
+                    <li>Feasibility asks if a project can be done with available resources.</li>
+                    <li>Viability asks if a project is sustainable and profitable long-term.</li>
+                </ul>
+                <h3>Market Size & Share:</h3>
+                <ul>
+                    <li>Market size is the total potential sales opportunity measured by revenue or volume.</li>
+                    <li>Market share is a company's percentage of total market sales.</li>
+                </ul>
+                <h3>Research Techniques:</h3>
+                <ul>
+                    <li>Surveys/questionnaires test interest; Interviews capture direct feedback; Social media polls track engagement.</li>
+                    <li>Pre-selling tests purchase commitment; Pop-up stalls provide face-to-face feedback; Observing competition checks existing demand.</li>
+                </ul>
+                <h3>Costs & Break-Even:</h3>
+                <ul>
+                    <li>Total costs equal fixed costs plus variable costs.</li>
+                    <li>Fixed costs remain constant regardless of sales. Variable costs change based on sales activity.</li>
+                    <li>Break-even quantity equals fixed costs divided by contribution margin.</li>
+                </ul>
+            </div>
+
+            <div class="chapter">
+                <h2>Chapter 6 (Part 2): Business Plan & Market Segmentation</h2>
+                <h3>Net Profit Calculations:</h3>
+                <ul>
+                    <li>Profit equals total income minus total expenses.</li>
+                    <li>Pro forma income statements project future profit using estimated figures.</li>
+                </ul>
+                <h3>Importance of a Business Plan:</h3>
+                <ul>
+                    <li>Provides strategic direction and goals; Assists operational decision-making.</li>
+                    <li>Secures financing from banks and investors; Identifies risks and opportunities.</li>
+                    <li>Improves resource management; Measures performance against benchmarks.</li>
+                    <li>Attracts external partners; Enhances stakeholder communication.</li>
+                </ul>
+                <h3>Business Plan Elements:</h3>
+                <ul>
+                    <li>Cover page shows ownership/contact details; Table of contents outlines sections.</li>
+                    <li>Executive summary provides a concise one-page overview; Management team highlights staff qualifications.</li>
+                    <li>Market analysis covers macro and industry environments; Products plan details unique product qualities.</li>
+                    <li>Marketing plan outlines target market and the 4 Ps; Operations plan details plant layout or service processes.</li>
+                    <li>Financial plan includes establishment costs, budgets, and pro forma statements; Appendices provide supporting documents.</li>
+                </ul>
+                <h3>Market Segmentation:</h3>
+                <ul>
+                    <li>Demographic segmentation divides markets by age, gender, or income.</li>
+                    <li>Geographic segmentation groups customers by location or climate.</li>
+                    <li>Psychographic segmentation classifies consumers by lifestyle and values.</li>
+                    <li>Behavioral segmentation analyzes purchasing habits and usage rates.</li>
+                </ul>
+            </div>
+
+            <div class="chapter">
+                <h2>Chapter 7: Management Control</h2>
+                <h3>Defining Control & Importance:</h3>
+                <ul>
+                    <li>Control identifies operational errors and implements corrective actions.</li>
+                    <li>Monitors planning, organizing, and leading activities; Evaluates performance against plans.</li>
+                    <li>Serves as a vital foundation for all management functions.</li>
+                </ul>
+                <h3>Levels & Types of Control:</h3>
+                <ul>
+                    <li>Levels: Individual (worker productivity), Group (team performance), Organizational (company-wide goals).</li>
+                    <li>Types: Pre-control (input resources), Concurrent control (real-time processes), Post-control (final output).</li>
+                </ul>
+                <h3>The Control Process & Standards:</h3>
+                <ul>
+                    <li>Step 1 establishes standards; Step 2 measures actual performance objectively; Step 3 compares performance against standards; Step 4 takes corrective actions.</li>
+                    <li>Standards: Quantity (volume), Cost (budgets), Time (deadlines), Quality (error rates), Behavior (conduct/training).</li>
+                </ul>
+                <h3>General Controls & Benefits:</h3>
+                <ul>
+                    <li>Financial controls, Quality controls (benchmarking), Balanced scorecards (convert strategy to goals).</li>
+                    <li>Benefits include achieving goals, reducing waste, and improving decisions.</li>
+                </ul>
+            </div>
+
+            <div class="chapter">
+                <h2>Chapter 8: Leadership (Part 1)</h2>
+                <h3>Nature of Leadership vs. Management:</h3>
+                <ul>
+                    <li>Leadership influences and motivates people toward shared goals; focuses on vision, change, and people.</li>
+                    <li>True leadership inspires support rather than using threats.</li>
+                    <li>Management focuses on execution, structure, and processes.</li>
+                </ul>
+                <h3>Leadership Styles:</h3>
+                <ul>
+                    <li>Autocratic: makes decisions without employee consultation.</li>
+                    <li>Participative: involves collaborative decision-making.</li>
+                    <li>Free-rein: grants workers complete task autonomy.</li>
+                    <li>Situational: matches style to specific operational contexts.</li>
+                </ul>
+                <h3>Types of Power:</h3>
+                <ul>
+                    <li>Coercive (fear/punishment), Reward (perks/pay), Legitimate (titles), Referent (charisma/respect), Expert (skills/knowledge).</li>
+                </ul>
+            </div>
+
+            <div class="chapter">
+                <h2>Chapter 9: Leadership (Part 2)</h2>
+                <h3>Theories:</h3>
+                <ul>
+                    <li>Trait Theory: Assumes good leaders are born with innate personal traits (honesty, empathy).</li>
+                    <li>Behavioral Theory: Studies how successful leader actions differ from unsuccessful ones.</li>
+                    <li>Newer Approaches: Leadership competencies theory (skill volume = effectiveness), Principle-centered (core beliefs), Ethical-leadership (moral conduct).</li>
+                    <li>Transformational (inspires innovation), Transactional (exchanges rewards for structured performance).</li>
+                    <li>Leader-Member-Exchange (LMX): focuses on in-group and out-group dynamics.</li>
+                    <li>Servant-leadership: involves leading by example through shared work.</li>
+                </ul>
+            </div>
+
+            <div class="chapter">
+                <h2>Chapter 10: Leading (Motivation)</h2>
+                <h3>Definition and Goals:</h3>
+                <ul>
+                    <li>Employee motivation is the daily enthusiasm, energy, promise, and creativity an employee brings to reach business goals.</li>
+                    <li>Management goals include finding the right person, retaining employees, ensuring attendance, encouraging high performance.</li>
+                </ul>
+                <h3>Motivation Theories:</h3>
+                <ul>
+                    <li>Maslow's Hierarchy: physiological, safety, social, esteem, self-actualization.</li>
+                    <li>Herzberg's Two-Factor: Motivating factors (achievement) vs. hygiene factors (pay, working conditions). Hygiene prevents dissatisfaction.</li>
+                    <li>Vroom's Theory (Carrot & Stick): motivated by positive rewards or negative consequences.</li>
+                    <li>Adams' Equity Theory: demotivated if perceiving unfairness compared to coworkers.</li>
+                    <li>Alderfer's ERG Theory: Existence, Relatedness, Growth. Multiple levels satisfied simultaneously.</li>
+                    <li>McClelland's Human Motivation Theory: driven by need for achievement, affiliation, or power.</li>
+                </ul>
+            </div>
+
+            <div class="chapter">
+                <h2>Chapter 11: Stakeholders</h2>
+                <h3>Definition and Categories:</h3>
+                <ul>
+                    <li>Stakeholders have an interest in a company and affect or are affected by its performance.</li>
+                    <li>Categories: Owners, Customers, Employees, Community, Suppliers, and Government.</li>
+                </ul>
+                <h3>Stakeholder Expectations & Influence:</h3>
+                <ul>
+                    <li>Owners: Expect ROI/profits. Can close/sell business.</li>
+                    <li>Customers: Expect good prices/quality. Can stop buying or spread negative feedback.</li>
+                    <li>Employees: Expect fair pay/balance. Can strike, quiet quit, or sabotage.</li>
+                    <li>Community: Expect support/funding. Can boycott, protest, or loot.</li>
+                    <li>Suppliers: Expect timely payments/fair negotiation. Can stop supplies or halt credit.</li>
+                    <li>Government: Expect taxes/lawfulness. Can cancel licenses or implement load shedding (e.g., Eskom).</li>
+                </ul>
+            </div>
+
+            <div class="chapter">
+                <h2>Chapter 12: Assets and Risks</h2>
+                <h3>Operational Risks & Shrinkage:</h3>
+                <ul>
+                    <li>Risks include shoplifting, employee theft, fraud, cyber threats, natural disasters, and sabotage.</li>
+                    <li>Shrinkage is the reduction of inventory value due to theft, POS mistakes, or counting errors.</li>
+                </ul>
+                <h3>Legal Capacity in SA:</h3>
+                <ul>
+                    <li>Children under 12 cannot be prosecuted for shoplifting. Children 12–14 prosecuted only if State proves criminal capacity.</li>
+                </ul>
+                <h3>Risk Management Process:</h3>
+                <ul>
+                    <li>Identify risks, evaluate techniques, select technique, implementation, and monitor effectiveness.</li>
+                </ul>
+            </div>
+
+            <div class="chapter">
+                <h2>Chapter 13: Workplace Health and Safety</h2>
+                <h3>OHS Act & Responsibilities:</h3>
+                <ul>
+                    <li>OHS Act (1993) main purpose is protecting employees from work-related hazards/injuries.</li>
+                    <li>Shared responsibility between employers (provide protective methods/training) and employees (obey rules, no playing).</li>
+                </ul>
+                <h3>Hazards vs. Risks vs. Controls:</h3>
+                <ul>
+                    <li>Hazard: potential to cause harm. Risk: likelihood/severity of harm. Controls: measures to decrease likelihood.</li>
+                </ul>
+                <h3>Health and Safety Representatives (HSRs):</h3>
+                <ul>
+                    <li>Required when workplace has >20 employees. Shops require 1 HSR per 100 employees.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- QUIZ SECTION -->
+        <section id="quiz-section" class="hidden">
+            <div id="quiz-setup">
+                <h2>Test Your Knowledge</h2>
+                <p>Click below to start a dynamic quiz based on your study notes.</p>
+                <button id="start-quiz-btn">Start Quiz</button>
+            </div>
+            
+            <div id="quiz-container" class="hidden">
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+                <h3 id="question-text">Question text goes here</h3>
+                <div id="options-container"></div>
+                <button id="next-btn" class="hidden">Next Question</button>
+            </div>
+
+            <div id="quiz-results" class="hidden">
+                <h2>Quiz Complete!</h2>
+                <p>Your Score: <span id="score-display"></span></p>
+                <button id="restart-btn">Take Again</button>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>Retail Operations Management 1 • Built for Student Success • Works 100% Offline (PWA)</p>
-    </footer>
-
-    <!-- App Scripts -->
     <script src="app.js"></script>
-    <script>
-        // Register Service Worker for Offline PWA Support
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('service-worker.js')
-                    .then(reg => console.log('Service Worker registered successfully!', reg))
-                    .catch(err => console.log('Service Worker registration failed:', err));
-            });
-        }
-    </script>
 </body>
 </html>
