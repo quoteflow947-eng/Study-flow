@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retail Business Management Study App</title>
-    <meta name="theme-color" content="#2563eb">
+    <title>Retail Business Management App</title>
+    <meta name="theme-color" content="#1e293b">
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
-    <header>
-        <h1>Retail Business Management</h1>
-        <nav>
-            <button id="btn-notes" class="active">Study Notes</button>
-            <button id="btn-quiz">Take Quiz</button>
-        </nav>
+    <header class="app-header">
+        <div class="header-container">
+            <h1>Retail Business Management</h1>
+            <nav class="app-nav">
+                <button id="btn-notes" class="nav-btn active">Study Notes</button>
+                <button id="btn-quiz" class="nav-btn">Interactive Quiz</button>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- NOTES SECTION -->
-        <section id="notes-section">
-            <div class="chapter">
+    <main class="app-main">
+        <!-- STUDY NOTES SECTION -->
+        <section id="notes-section" class="active-section">
+            
+            <div class="chapter-card">
                 <h2>Chapter 6 (Part 1): Entrepreneurship & Feasibility</h2>
+                
                 <h3>Importance of Entrepreneurship:</h3>
                 <ul>
                     <li>Job creation lowers unemployment via small and medium enterprises.</li>
@@ -30,6 +34,7 @@
                     <li>Social problem solving addresses healthcare and energy gaps.</li>
                     <li>Encouraging self-reliance fosters financial independence.</li>
                 </ul>
+
                 <h3>Challenges in SA Entrepreneurship:</h3>
                 <ul>
                     <li>High unemployment and low disposable income limit market size.</li>
@@ -40,12 +45,14 @@
                     <li>Market access difficulties hinder entering larger supply chains.</li>
                     <li>Lack of mentorship leads to poor decision-making.</li>
                 </ul>
+
                 <h3>Definition of an Entrepreneur:</h3>
                 <ul>
                     <li>An entrepreneur identifies market opportunities and gathers resources.</li>
                     <li>They create and grow a business venture to satisfy needs.</li>
                     <li>They assume risks and earn profits upon success.</li>
                 </ul>
+
                 <h3>Top South African Entrepreneurs:</h3>
                 <ul>
                     <li>Elon Musk has a net worth of US $22.2 billion and founded PayPal, Tesla, and SpaceX.</li>
@@ -53,58 +60,89 @@
                     <li>Patrice Motsepe leads Future Mining and African Rainbow Minerals.</li>
                     <li>Bonang Matheba owns Bonang Matheba Entertainment.</li>
                 </ul>
+
                 <h3>Entrepreneur Characteristics:</h3>
                 <ul>
-                    <li>Innovative creation of new ideas, Risk-taker for goal achievement, Self-confident in personal abilities.</li>
-                    <li>Hardworking and dedicated, Goal-oriented focus, Leadership skills to guide others.</li>
-                    <li>Decision-making ability, Persistent despite setbacks, Adaptable to environmental changes.</li>
-                    <li>Good problem solver, Creative thinking, Organized resource management.</li>
+                    <li>Innovative creation of new ideas.</li>
+                    <li>Risk-taker for goal achievement.</li>
+                    <li>Self-confident in personal abilities.</li>
+                    <li>Hardworking and dedicated.</li>
+                    <li>Goal-oriented focus.</li>
+                    <li>Leadership skills to guide others.</li>
+                    <li>Decision-making ability.</li>
+                    <li>Persistent despite setbacks.</li>
+                    <li>Adaptable to environmental changes.</li>
+                    <li>Good problem solver.</li>
+                    <li>Creative thinking.</li>
+                    <li>Organized resource management.</li>
                 </ul>
+
                 <h3>Feasibility vs. Viability:</h3>
                 <ul>
                     <li>Feasibility asks if a project can be done with available resources.</li>
                     <li>Viability asks if a project is sustainable and profitable long-term.</li>
                 </ul>
+
                 <h3>Market Size & Share:</h3>
                 <ul>
                     <li>Market size is the total potential sales opportunity measured by revenue or volume.</li>
                     <li>Market share is a company's percentage of total market sales.</li>
                 </ul>
+
                 <h3>Research Techniques:</h3>
                 <ul>
-                    <li>Surveys/questionnaires test interest; Interviews capture direct feedback; Social media polls track engagement.</li>
-                    <li>Pre-selling tests purchase commitment; Pop-up stalls provide face-to-face feedback; Observing competition checks existing demand.</li>
+                    <li>Surveys and questionnaires test customer interest.</li>
+                    <li>Interviews capture direct feedback.</li>
+                    <li>Social media polls track quick engagement.</li>
+                    <li>Pre-selling tests customer purchase commitment.</li>
+                    <li>Pop-up stalls provide face-to-face feedback.</li>
+                    <li>Observing competition checks existing demand.</li>
                 </ul>
+
                 <h3>Costs & Break-Even:</h3>
                 <ul>
                     <li>Total costs equal fixed costs plus variable costs.</li>
-                    <li>Fixed costs remain constant regardless of sales. Variable costs change based on sales activity.</li>
+                    <li>Fixed costs remain constant regardless of sales.</li>
+                    <li>Variable costs change based on sales activity.</li>
                     <li>Break-even quantity equals fixed costs divided by contribution margin.</li>
                 </ul>
             </div>
 
-            <div class="chapter">
+            <div class="chapter-card">
                 <h2>Chapter 6 (Part 2): Business Plan & Market Segmentation</h2>
+                
                 <h3>Net Profit Calculations:</h3>
                 <ul>
                     <li>Profit equals total income minus total expenses.</li>
                     <li>Pro forma income statements project future profit using estimated figures.</li>
                 </ul>
+
                 <h3>Importance of a Business Plan:</h3>
                 <ul>
-                    <li>Provides strategic direction and goals; Assists operational decision-making.</li>
-                    <li>Secures financing from banks and investors; Identifies risks and opportunities.</li>
-                    <li>Improves resource management; Measures performance against benchmarks.</li>
-                    <li>Attracts external partners; Enhances stakeholder communication.</li>
+                    <li>Provides strategic direction and goals.</li>
+                    <li>Assists operational decision-making.</li>
+                    <li>Secures financing from banks and investors.</li>
+                    <li>Identifies risks and opportunities.</li>
+                    <li>Improves resource management.</li>
+                    <li>Measures performance against benchmarks.</li>
+                    <li>Attracts external partners.</li>
+                    <li>Enhances stakeholder communication.</li>
                 </ul>
+
                 <h3>Business Plan Elements:</h3>
                 <ul>
-                    <li>Cover page shows ownership/contact details; Table of contents outlines sections.</li>
-                    <li>Executive summary provides a concise one-page overview; Management team highlights staff qualifications.</li>
-                    <li>Market analysis covers macro and industry environments; Products plan details unique product qualities.</li>
-                    <li>Marketing plan outlines target market and the 4 Ps; Operations plan details plant layout or service processes.</li>
-                    <li>Financial plan includes establishment costs, budgets, and pro forma statements; Appendices provide supporting documents.</li>
+                    <li>Cover page shows ownership and contact details.</li>
+                    <li>Table of contents outlines sections.</li>
+                    <li>Executive summary provides a concise one-page overview.</li>
+                    <li>Management team highlights staff qualifications.</li>
+                    <li>Market analysis covers macro and industry environments.</li>
+                    <li>Products plan details unique product qualities.</li>
+                    <li>Marketing plan outlines target market and the 4 Ps.</li>
+                    <li>Operations plan details plant layout or service processes.</li>
+                    <li>Financial plan includes establishment costs, budgets, and pro forma statements.</li>
+                    <li>Appendices provide supporting legal and professional documents.</li>
                 </ul>
+
                 <h3>Market Segmentation:</h3>
                 <ul>
                     <li>Demographic segmentation divides markets by age, gender, or income.</li>
@@ -114,157 +152,264 @@
                 </ul>
             </div>
 
-            <div class="chapter">
+            <div class="chapter-card">
                 <h2>Chapter 7: Management Control</h2>
-                <h3>Defining Control & Importance:</h3>
+                
+                <h3>Defining Control:</h3>
                 <ul>
                     <li>Control identifies operational errors and implements corrective actions.</li>
-                    <li>Monitors planning, organizing, and leading activities; Evaluates performance against plans.</li>
+                </ul>
+
+                <h3>Importance of Control:</h3>
+                <ul>
+                    <li>Monitors planning, organizing, and leading activities.</li>
+                    <li>Evaluates performance against plans.</li>
                     <li>Serves as a vital foundation for all management functions.</li>
                 </ul>
-                <h3>Levels & Types of Control:</h3>
+
+                <h3>Levels of Control:</h3>
                 <ul>
-                    <li>Levels: Individual (worker productivity), Group (team performance), Organizational (company-wide goals).</li>
-                    <li>Types: Pre-control (input resources), Concurrent control (real-time processes), Post-control (final output).</li>
+                    <li>Individual level monitors worker productivity.</li>
+                    <li>Group level evaluates team performance.</li>
+                    <li>Organizational level assesses company-wide financial and operational goals.</li>
                 </ul>
-                <h3>The Control Process & Standards:</h3>
+
+                <h3>Types of Control:</h3>
                 <ul>
-                    <li>Step 1 establishes standards; Step 2 measures actual performance objectively; Step 3 compares performance against standards; Step 4 takes corrective actions.</li>
-                    <li>Standards: Quantity (volume), Cost (budgets), Time (deadlines), Quality (error rates), Behavior (conduct/training).</li>
+                    <li>Pre-control focuses on input resources before work begins.</li>
+                    <li>Concurrent control monitors real-time transformation processes.</li>
+                    <li>Post-control evaluates final output goods and services.</li>
                 </ul>
+
+                <h3>The Control Process:</h3>
+                <ul>
+                    <li>Step 1 establishes performance standards.</li>
+                    <li>Step 2 measures actual performance objectively.</li>
+                    <li>Step 3 compares performance against standards.</li>
+                    <li>Step 4 takes necessary corrective actions.</li>
+                </ul>
+
+                <h3>Performance Standards:</h3>
+                <ul>
+                    <li>Quantity standards track production or sales volume.</li>
+                    <li>Cost standards manage budget constraints.</li>
+                    <li>Time standards enforce deadlines.</li>
+                    <li>Quality standards limit error rates.</li>
+                    <li>Behavior standards mandate employee conduct or training.</li>
+                </ul>
+
                 <h3>General Controls & Benefits:</h3>
                 <ul>
-                    <li>Financial controls, Quality controls (benchmarking), Balanced scorecards (convert strategy to goals).</li>
-                    <li>Benefits include achieving goals, reducing waste, and improving decisions.</li>
+                    <li>Financial controls monitor fiscal performance.</li>
+                    <li>Quality controls utilize benchmarking techniques.</li>
+                    <li>Balanced scorecards convert strategy into measurable goals.</li>
+                    <li>Control benefits include achieving goals, reducing waste, and improving decisions.</li>
                 </ul>
             </div>
 
-            <div class="chapter">
-                <h2>Chapter 8: Leadership (Part 1)</h2>
-                <h3>Nature of Leadership vs. Management:</h3>
+            <div class="chapter-card">
+                <h2>Chapter 8 (Leadership Part 1): Styles & Power</h2>
+                
+                <h3>Nature of Leadership:</h3>
                 <ul>
-                    <li>Leadership influences and motivates people toward shared goals; focuses on vision, change, and people.</li>
+                    <li>Leadership influences and motivates people toward shared goals.</li>
                     <li>True leadership inspires support rather than using threats.</li>
+                </ul>
+
+                <h3>Leadership vs. Management:</h3>
+                <ul>
+                    <li>Leadership focuses on vision, change, and people.</li>
                     <li>Management focuses on execution, structure, and processes.</li>
                 </ul>
+
                 <h3>Leadership Styles:</h3>
                 <ul>
-                    <li>Autocratic: makes decisions without employee consultation.</li>
-                    <li>Participative: involves collaborative decision-making.</li>
-                    <li>Free-rein: grants workers complete task autonomy.</li>
-                    <li>Situational: matches style to specific operational contexts.</li>
+                    <li>Autocratic leadership makes decisions without employee consultation.</li>
+                    <li>Participative leadership involves collaborative decision-making.</li>
+                    <li>Free-rein leadership grants workers complete task autonomy.</li>
+                    <li>Situational leadership matches style to specific operational contexts.</li>
                 </ul>
+
                 <h3>Types of Power:</h3>
                 <ul>
-                    <li>Coercive (fear/punishment), Reward (perks/pay), Legitimate (titles), Referent (charisma/respect), Expert (skills/knowledge).</li>
+                    <li>Coercive power relies on fear and punishment.</li>
+                    <li>Reward power controls valuable perks or pay.</li>
+                    <li>Legitimate power derives from organizational titles.</li>
+                    <li>Referent power stems from personal charisma and respect.</li>
+                    <li>Expert power comes from specialized skills and knowledge.</li>
                 </ul>
             </div>
 
-            <div class="chapter">
-                <h2>Chapter 9: Leadership (Part 2)</h2>
-                <h3>Theories:</h3>
+            <div class="chapter-card">
+                <h2>Chapter 9 (Leadership Part 2): Leadership Theories</h2>
+                
+                <h3>Trait Theory:</h3>
                 <ul>
-                    <li>Trait Theory: Assumes good leaders are born with innate personal traits (honesty, empathy).</li>
-                    <li>Behavioral Theory: Studies how successful leader actions differ from unsuccessful ones.</li>
-                    <li>Newer Approaches: Leadership competencies theory (skill volume = effectiveness), Principle-centered (core beliefs), Ethical-leadership (moral conduct).</li>
-                    <li>Transformational (inspires innovation), Transactional (exchanges rewards for structured performance).</li>
-                    <li>Leader-Member-Exchange (LMX): focuses on in-group and out-group dynamics.</li>
-                    <li>Servant-leadership: involves leading by example through shared work.</li>
+                    <li>Assumes good leaders are born with innate personal traits.</li>
+                    <li>Includes traits like honesty, confidence, and empathy.</li>
+                </ul>
+
+                <h3>Behavioral Theory:</h3>
+                <ul>
+                    <li>Studies how successful leader actions differ from unsuccessful ones.</li>
+                    <li>Emphasizes perseverance and focusing on key signals.</li>
+                </ul>
+
+                <h3>Newer Approaches:</h3>
+                <ul>
+                    <li>Leadership competencies theory links skill volume to effectiveness.</li>
+                    <li>Principle-centered perspective highlights core leadership beliefs.</li>
+                    <li>Ethical-leadership perspective promotes moral conduct.</li>
+                    <li>Transformational leadership inspires innovation and cultural change.</li>
+                    <li>Transactional leadership exchanges rewards for structured performance.</li>
+                    <li>Leader-Member-Exchange (LMX) focuses on in-group and out-group dynamics.</li>
+                    <li>Servant-leadership involves leading by example through shared work.</li>
                 </ul>
             </div>
 
-            <div class="chapter">
+            <div class="chapter-card">
                 <h2>Chapter 10: Leading (Motivation)</h2>
+                
                 <h3>Definition and Goals:</h3>
                 <ul>
                     <li>Employee motivation is the daily enthusiasm, energy, promise, and creativity an employee brings to reach business goals.</li>
-                    <li>Management goals include finding the right person, retaining employees, ensuring attendance, encouraging high performance.</li>
+                    <li>Management goals include finding the right person, retaining employees, ensuring attendance, encouraging high performance, and fostering good citizenship.</li>
                 </ul>
-                <h3>Motivation Theories:</h3>
+
+                <h3>Maslow's Hierarchy of Needs:</h3>
                 <ul>
-                    <li>Maslow's Hierarchy: physiological, safety, social, esteem, self-actualization.</li>
-                    <li>Herzberg's Two-Factor: Motivating factors (achievement) vs. hygiene factors (pay, working conditions). Hygiene prevents dissatisfaction.</li>
-                    <li>Vroom's Theory (Carrot & Stick): motivated by positive rewards or negative consequences.</li>
-                    <li>Adams' Equity Theory: demotivated if perceiving unfairness compared to coworkers.</li>
-                    <li>Alderfer's ERG Theory: Existence, Relatedness, Growth. Multiple levels satisfied simultaneously.</li>
-                    <li>McClelland's Human Motivation Theory: driven by need for achievement, affiliation, or power.</li>
+                    <li>Comprises physiological, safety, social, esteem, and self-actualization needs.</li>
+                    <li>Management applies this via salaries, job stability, team interactions, recognition, and autonomy.</li>
+                </ul>
+
+                <h3>Herzberg's Two-Factor Theory:</h3>
+                <ul>
+                    <li>Distinguishes between motivating factors (high motivators like achievement and recognition) and hygiene factors (low motivators like pay and working conditions).</li>
+                    <li>Hygiene factors must be present to prevent job dissatisfaction, allowing motivators to increase satisfaction.</li>
+                </ul>
+
+                <h3>Other Theories:</h3>
+                <ul>
+                    <li>Vroom's Theory (Carrot and Stick Approach): Employees are motivated by positive rewards (bonuses) or negative consequences (warnings).</li>
+                    <li>Adams' Equity Theory (1965): Employees are demotivated if they perceive unfairness when comparing their input-outcome ratio to coworkers.</li>
+                    <li>Alderfer's ERG Theory: Groups needs into Existence, Relatedness, and Growth. Unlike Maslow's sequential model, multiple levels of ERG needs can be satisfied simultaneously.</li>
+                    <li>McClelland's Human Motivation Theory: States that every person is driven by one of three primary needs: the need for achievement, affiliation, or power.</li>
                 </ul>
             </div>
 
-            <div class="chapter">
+            <div class="chapter-card">
                 <h2>Chapter 11: Stakeholders</h2>
-                <h3>Definition and Categories:</h3>
+                
+                <h3>Definition and Aims:</h3>
                 <ul>
                     <li>Stakeholders have an interest in a company and affect or are affected by its performance.</li>
-                    <li>Categories: Owners, Customers, Employees, Community, Suppliers, and Government.</li>
+                    <li>Businesses aim to promote positive stakeholder actions and prevent negative ones.</li>
                 </ul>
-                <h3>Stakeholder Expectations & Influence:</h3>
+
+                <h3>Stakeholder Categories & Influence:</h3>
                 <ul>
-                    <li>Owners: Expect ROI/profits. Can close/sell business.</li>
-                    <li>Customers: Expect good prices/quality. Can stop buying or spread negative feedback.</li>
-                    <li>Employees: Expect fair pay/balance. Can strike, quiet quit, or sabotage.</li>
-                    <li>Community: Expect support/funding. Can boycott, protest, or loot.</li>
-                    <li>Suppliers: Expect timely payments/fair negotiation. Can stop supplies or halt credit.</li>
-                    <li>Government: Expect taxes/lawfulness. Can cancel licenses or implement load shedding (e.g., Eskom).</li>
+                    <li><strong>Owners:</strong> Provide capital and loan security, evaluate success. Expect ROI. Can close/sell business or dismiss managers.</li>
+                    <li><strong>Customers:</strong> Buy products and advertise via word of mouth. Expect good prices/quality. Can stop buying or spread negative feedback.</li>
+                    <li><strong>Employees:</strong> Provide labor/skills. Expect fair pay, job security, work-life balance. Influence via strikes, quiet quitting, theft, and sabotage.</li>
+                    <li><strong>Community:</strong> Provide local support. Expect funding/venues. Influence via positive word of mouth, boycotts, protests, or looting.</li>
+                    <li><strong>Suppliers:</strong> Provide goods/services/finance. Expect timely payments and loyalty. Influence by stopping supplies or changing credit arrangements.</li>
+                    <li><strong>Government:</strong> Municipalities, SARS, SAPS, CCMA. Expect taxes and ethical behavior. Influence by canceling licenses, imposing fines, or load shedding.</li>
                 </ul>
             </div>
 
-            <div class="chapter">
-                <h2>Chapter 12: Assets and Risks</h2>
-                <h3>Operational Risks & Shrinkage:</h3>
+            <div class="chapter-card">
+                <h2>Chapter 12: Assets and Risks (Retail Risk Management)</h2>
+                
+                <h3>Introduction to Operational Risks:</h3>
                 <ul>
-                    <li>Risks include shoplifting, employee theft, fraud, cyber threats, natural disasters, and sabotage.</li>
-                    <li>Shrinkage is the reduction of inventory value due to theft, POS mistakes, or counting errors.</li>
+                    <li>Owning a retail store or e-commerce business comes with built-in operational risks that impact performance.</li>
+                    <li>Top risks include shoplifting, employee theft, fraud, inventory shortages, cybersecurity threats, supply chain disruptions, competition, health and safety incidents, natural disasters, and sabotage.</li>
                 </ul>
-                <h3>Legal Capacity in SA:</h3>
+
+                <h3>Shrinkage & Prevention:</h3>
                 <ul>
-                    <li>Children under 12 cannot be prosecuted for shoplifting. Children 12–14 prosecuted only if State proves criminal capacity.</li>
+                    <li>Shrinkage is the reduction of inventory value due to employee or customer theft, POS mistakes, supplier short-deliveries, or counting errors.</li>
+                    <li>Store prevention methods: organized store, optimizing layout near exits, security cameras/mirrors, customer service engagement, and RFID tags.</li>
+                    <li>Staff should be trained on spotting price-switching scams, handling suspects calmly, and involving security/police.</li>
                 </ul>
-                <h3>Risk Management Process:</h3>
+
+                <h3>Legal Capacity & Prosecution in South Africa:</h3>
                 <ul>
-                    <li>Identify risks, evaluate techniques, select technique, implementation, and monitor effectiveness.</li>
+                    <li>Children under 12 cannot be prosecuted for shoplifting.</li>
+                    <li>Children aged 12–14 can only be prosecuted if the State proves criminal capacity.</li>
+                    <li>Severely mentally incapacitated individuals may not be held criminally responsible.</li>
+                </ul>
+
+                <h3>Other Risks & Management:</h3>
+                <ul>
+                    <li>Data breaches and phishing scams target sensitive data. Natural disasters require property insurance. Customer injuries require general liability insurance. Forced closures happen due to lockdowns or safety violations.</li>
+                    <li>Risk Management Process: Identify risks, evaluate techniques, select technique, implementation, and monitor effectiveness.</li>
                 </ul>
             </div>
 
-            <div class="chapter">
+            <div class="chapter-card">
                 <h2>Chapter 13: Workplace Health and Safety</h2>
-                <h3>OHS Act & Responsibilities:</h3>
+                
+                <h3>OHS Act Purpose & Responsibility:</h3>
                 <ul>
-                    <li>OHS Act (1993) main purpose is protecting employees from work-related hazards/injuries.</li>
-                    <li>Shared responsibility between employers (provide protective methods/training) and employees (obey rules, no playing).</li>
+                    <li>The Occupational Health and Safety Act (OHSA), 1993, requires retailers to maintain a safe work environment free of health risks.</li>
+                    <li>Safety is the shared responsibility of both employers and employees. Both parties must proactively identify dangers and develop safety control measures.</li>
                 </ul>
-                <h3>Hazards vs. Risks vs. Controls:</h3>
+
+                <h3>Hazards, Risks, and Controls:</h3>
                 <ul>
-                    <li>Hazard: potential to cause harm. Risk: likelihood/severity of harm. Controls: measures to decrease likelihood.</li>
+                    <li>Hazard: anything with the potential to cause harm (e.g., wet floors, exposed wiring).</li>
+                    <li>Risk: the likelihood and severity of harm caused by a hazard.</li>
+                    <li>Controls: measures implemented to decrease the likelihood or consequences of an unwanted event.</li>
                 </ul>
+
+                <h3>Employer & Employee Duties:</h3>
+                <ul>
+                    <li>Employer: Identify risks, establish/provide protective methods and training, ensure compliance, appoint health and safety reps.</li>
+                    <li>Employee: Care for personal health/safety, avoid "playing" at work, obey safety rules, report unsafe conditions, give info to labour inspectors.</li>
+                </ul>
+
                 <h3>Health and Safety Representatives (HSRs):</h3>
                 <ul>
-                    <li>Required when workplace has >20 employees. Shops require 1 HSR per 100 employees.</li>
+                    <li>Required when a workplace has more than 20 employees.</li>
+                    <li>Shops require at least 1 HSR per 100 employees, while other workplaces require 1 per 50 employees.</li>
+                </ul>
+
+                <h3>Implementation and Stress:</h3>
+                <ul>
+                    <li>Managed by Department of Labour. Inspectors can enter workplaces without notice, take samples, issue fines, or stop processes.</li>
+                    <li>Stress symptoms include physical, behavioral, cognitive, and emotional signs. Coping strategies include identifying causes, managing time, setting priorities/boundaries.</li>
                 </ul>
             </div>
         </section>
 
         <!-- QUIZ SECTION -->
         <section id="quiz-section" class="hidden">
-            <div id="quiz-setup">
-                <h2>Test Your Knowledge</h2>
-                <p>Click below to start a dynamic quiz based on your study notes.</p>
-                <button id="start-quiz-btn">Start Quiz</button>
+            <div class="quiz-card" id="quiz-setup">
+                <h2>Comprehensive Module Quiz</h2>
+                <p>Test your knowledge on Entrepreneurship, Business Plans, Control, Leadership, Motivation, Stakeholders, Risks, and OHS.</p>
+                <button id="start-quiz-btn" class="primary-btn">Start Quiz</button>
             </div>
             
-            <div id="quiz-container" class="hidden">
-                <div class="progress-bar">
-                    <div id="progress-fill"></div>
+            <div class="quiz-card hidden" id="quiz-container">
+                <div class="quiz-header">
+                    <span id="question-counter">Question 1 of 27</span>
+                    <div class="progress-bar">
+                        <div id="progress-fill"></div>
+                    </div>
                 </div>
                 <h3 id="question-text">Question text goes here</h3>
-                <div id="options-container"></div>
-                <button id="next-btn" class="hidden">Next Question</button>
+                <div id="options-container" class="options-grid"></div>
+                <button id="next-btn" class="primary-btn hidden">Next Question</button>
             </div>
 
-            <div id="quiz-results" class="hidden">
+            <div class="quiz-card hidden" id="quiz-results">
                 <h2>Quiz Complete!</h2>
-                <p>Your Score: <span id="score-display"></span></p>
-                <button id="restart-btn">Take Again</button>
+                <div class="score-circle">
+                    <span id="score-display">0/0</span>
+                </div>
+                <p id="score-message">Great job completing the quiz!</p>
+                <button id="restart-btn" class="primary-btn">Take Quiz Again</button>
             </div>
         </section>
     </main>
