@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Operations & Business Management Study Hub</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col">
+
+    <!-- Navigation Header -->
+    <header class="bg-indigo-900 text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wide mb-2 md:mb-0">📚 Student Study & Quiz Hub</h1>
+            <nav class="flex flex-wrap gap-2 text-sm font-medium">
+                <button onclick="switchSection('ch12')" id="nav-ch12" class="px-3 py-1.5 rounded bg-indigo-800 transition">Ch 12: Assets & Risks</button>
+                <button onclick="switchSection('ch13')" id="nav-ch13" class="px-3 py-1.5 rounded hover:bg-indigo-800 transition">Ch 13: Health & Safety</button>
+                <button onclick="switchSection('ch11')" id="nav-ch11" class="px-3 py-1.5 rounded hover:bg-indigo-800 transition">Ch 11: Stakeholders</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-4xl mx-auto px-4 py-8 flex-grow w-full">
+
+        <!-- TOPIC SECTION CONTAINER -->
+        <div id="content-display">
+            <!-- Dynamically loaded via JavaScript -->
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500 mt-12">
+        <p>Retail Operations Management Study Hub • Built for Students • Hosted on GitHub Pages</p>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Database of Topics with Exact Notes and 5-Question Quizzes based on Uploaded Slides
+        const courseData = {
+            ch12: {
+                title: "Chapter 12: Assets and Risks (Retail Risk Management)",
+                notes: [
+                    "<strong>Introduction to Operational Risks:</strong> Owning a retail store or e-commerce website comes with built-in risks such as customer theft, visitor slips/falls, digital phishing attacks, and looting[cite: 3].",
+                    "<strong>Shrinkage Definition:</strong> Shrinkage is the reduction of inventory value due to employee or customer theft, point-of-sale mistakes, supplier short deliveries, or miscounting during stock-takes[cite: 6, 8].",
+                    "<strong>Shoplifting Definition:</strong> Taking goods from a store without paying, where the store must prove the person took control of the merchandise away from the retailer[cite: 9].",
+                    "<strong>Legal Prosecution Limits in South Africa:</strong> Children under 12 years old cannot be prosecuted for shoplifting as they lack criminal capacity. Children aged 12-14 can only be prosecuted if the State proves they understood the wrongfulness[cite: 16].",
+                    "<strong>Insurance Protections:</strong> General liability insurance protects against customer injury claims (e.g., slipping on a wet floor), while business property insurance covers inventory and store damage from natural disasters[cite: 18, 19]."
+                ],
+                quiz: [
+                    {
+                        question: "How is 'shrinkage' defined in retail operations?",
+                        options: [
+                            "The natural spoilage of perishable items only",
+                            "The reduction of inventory value due to employee or customer theft",
+                            "The markdown of seasonal clothing prices",
+                            "The decrease in customer foot traffic"
+                        ],
+                        answer: 1
+                    },
+                    {
+                        question: "According to South African law, what is the legal position regarding children under 12 years old committing shoplifting?",
+                        options: [
+                            "They can be prosecuted with parental consent",
+                            "They are fined through municipal courts",
+                            "They cannot be prosecuted because they are presumed not to have criminal capacity",
+                            "They receive community service hours"
+                        ],
+                        answer: 2
+                    },
+                    {
+                        question: "Which of the following is NOT listed as a type or cause of inventory shrinkage?",
+                        options: [
+                            "Theft by customers and employees",
+                            "Mistakes by employees at the point of sale",
+                            "A supplier mistakenly short-delivering on an order",
+                            "A customer returning an unwanted gift with a valid receipt"
+                        ],
+                        answer: 3
+                    },
+                    {
+                        question: "What type of insurance protects a retail business against customer injury claims (such as slipping on a wet floor)?",
+                        options: [
+                            "General liability insurance",
+                            "Unemployment insurance fund (UIF)",
+                            "Vehicle transit insurance",
+                            "Cybersecurity insurance"
+                        ],
+                        answer: 0
+                    },
+                    {
+                        question: "What must a store prove in order for an action to be legally classified as shoplifting?",
+                        options: [
+                            "That the person looked suspicious on security cameras",
+                            "That the person took control of the merchandise away from the retailer without paying",
+                            "That the person exited the shopping mall parking lot",
+                            "That the item's price tag was physically removed"
+                        ],
+                        answer: 1
+                    }
+                ]
+            },
+            ch13: {
+                title: "Chapter 13: Health and Safety / Wellness in the Workplace",
+                notes: [
+                    "<strong>The OHSA (1993):</strong> The Occupational Health and Safety Act requires retailers to maintain a work environment that is safe and without risk to workers' health[cite: 24].",
+                    "<strong>Hazards vs. Risks:</strong> A hazard is anything with the potential to cause harm (e.g., wet floor, exposed wiring). A risk is the likelihood that the hazard will cause harm and how severe it could be[cite: 27, 28].",
+                    "<strong>Health and Safety Representatives (HSRs):</strong> Required in workplaces with more than 20 employees. For shops and offices, the requirement is at least 1 HSR per 100 employees or part thereof[cite: 35, 36].",
+                    "<strong>Employee Responsibilities:</strong> Employees must care for their own and others' health, cooperate with the employer, wear approved safety equipment, and report unsafe conditions. 'Playing' at work is a serious violation[cite: 37].",
+                    "<strong>Stress Management Symptoms:</strong> Symptoms of workplace stress are categorized into physical (dizziness, high blood pressure), behavioral (insomnia, nail biting), cognitive (poor judgment, memory loss), and emotional (anger, depression)[cite: 41]."
+                ],
+                quiz: [
+                    {
+                        question: "What is the primary definition of a 'hazard' under workplace safety guidelines?",
+                        options: [
+                            "The likelihood that an accident will occur",
+                            "Anything with the potential to cause harm",
+                            "An injury sustained during working hours",
+                            "A fine issued by a Department of Labour inspector"
+                        ],
+                        answer: 1
+                    },
+                    {
+                        question: "When does the statutory requirement to appoint Health and Safety Representatives (HSRs) officially begin?",
+                        options: [
+                            "When the business opens its first store",
+                            "When the workplace has more than 20 employees",
+                            "Only when requested by a trade union",
+                            "When an employee is injured on duty"
+                        ],
+                        answer: 1
+                    },
+                    {
+                        question: "According to the Labour Department standards for shops and offices, how many HSRs are required for 100 employees?",
+                        options: [
+                            "At least 1 H&S representative per 100 employees or part thereof",
+                             "Exactly 5 representatives",
+                             "1 representative per 10 employees",
+                             "None required for offices"
+                        ],
+                        answer: 0
+                    },
+                    {
+                        question: "Which of the following is categorized as a behavioral symptom of workplace stress?",
+                        options: [
+                            "High blood pressure and rapid breathing",
+                            "Confusion and poor judgment",
+                            "Insomnia or sleeplessness and nail biting",
+                            "Depression and feelings of dread"
+                        ],
+                        answer: 2
+                    },
+                    {
+                        question: "Which act governs occupational health and safety in South African workplaces as outlined in your notes?",
+                        options: [
+                            "The Basic Conditions of Employment Act",
+                            "The Occupational Health and Safety Act [OHSA], 1993",
+                            "The Consumer Protection Act",
+                            "The Labour Relations Act"
+                        ],
+                        answer: 1
+                    }
+                ]
+            },
+            ch11: {
+                title: "Chapter 11: Stakeholders",
+                notes: [
+                    "<strong>Stakeholder Definition:</strong> A stakeholder has an interest in a company and can either affect or be affected by business operations and performance[cite: 46].",
+                    "<strong>Key Stakeholder Categories:</strong> Owners, Customers, Employees, Suppliers, Government, and Community[cite: 45, 46].",
+                    "<strong>Owner Expectations & Influence:</strong> Owners expect profits, return on investment (ROI), and growth. Their influence includes closing the business, selling shares, or dismissing managers[cite: 54, 55].",
+                    "<strong>Employee Influence:</strong> If employee needs are not met, they may strike, go slow, steal, sabotage, or engage in 'quiet quitting'[cite: 62].",
+                    "<strong>Government Agencies:</strong> Includes Municipalities (services, licenses), SARS (taxes), SAPS, and the CCMA (resolving disputes between employees and employers)[cite: 68]."
+                ],
+                quiz: [
+                    {
+                        question: "How is a stakeholder defined in business management?",
+                        options: [
+                            "Only individuals who hold shares in a registered company",
+                            "A person or group that has an interest in a company and can affect or be affected by its operations",
+                            "External auditors appointed by the government",
+                            "Suppliers who provide raw materials on 30-day credit terms"
+                        ],
+                        answer: 1
+                    },
+                    {
+                        question: "What is a primary expectation that suppliers have from retail customers according to the notes?",
+                        options: [
+                            "Free advertising in local newspapers",
+                            "Timely payments honoring payment terms without unnecessary delays",
+                            "Exclusive ownership of store premises",
+                            "Complete exemption from business taxes"
+                        ],
+                        answer: 1
+                    },
+                    {
+                        question: "Which government body specifically helps dissatisfied employees resolve disputes against their employers?",
+                        options: [
+                            "SARS (South African Revenue Service)",
+                            "SAPS (South African Police Service)",
+                            "CCMA (Commission for Conciliation, Mediation and Arbitration)",
+                            "Municipal licensing department"
+                        ],
+                        answer: 2
+                    },
+                    {
+                        question: "What is a potential negative consequence or influence if employee needs and remuneration expectations are not met?",
+                        options: [
+                            "Increased customer foot traffic",
+                            "Immediate tax rebates from SARS",
+                            "Strikes, sabotage, or 'quiet quitting'",
+                            "Extended credit terms from suppliers"
+                        ],
+                        answer: 2
+                    },
+                    {
+                        question: "Which of the following represents a critical role of owners as stakeholders?",
+                        options: [
+                            "Providing capital to start and run the business, and security for loans",
+                            "Delivering stock directly to retail shelves",
+                            "Enforcing health and safety inspections as labor inspectors",
+                            "Setting municipal water and electricity tariffs"
+                        ],
+                        answer: 0
+                    }
+                ]
+            }
+        };
+
+        let currentActiveSection = 'ch12';
+        let userAnswers = {};
+
+        function switchSection(sectionKey) {
+            currentActiveSection = sectionKey;
+            
+            // Update nav button styling
+            document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('bg-indigo-800'));
+            document.getElementById('nav-' + sectionKey).classList.add('bg-indigo-800');
+
+            renderSectionContent(sectionKey);
+        }
+
+        function renderSectionContent(key) {
+            const data = courseData[key];
+            userAnswers[key] = new Array(data.quiz.length).fill(null);
+
+            let notesHTML = data.notes.map(note => `<li class="mb-2 text-slate-700">${note}</li>`).join('');
+            
+            let quizHTML = data.quiz.map((q, qIndex) => {
+                let optionsHTML = q.options.map((opt, optIndex) => `
+                    <label class="block p-3 border rounded-lg cursor-pointer hover:bg-slate-50 transition text-sm mb-2">
+                        <input type="radio" name="q_${key}_${qIndex}" value="${optIndex}" onclick="selectAnswer('${key}', ${qIndex}, ${optIndex})" class="mr-2">
+                        ${opt}
+                    </label>
+                `).join('');
+
+                return `
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 mb-6">
+                        <span class="text-xs font-semibold bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Question ${qIndex + 1} of 5</span>
+                        <h4 class="font-bold text-base text-slate-900 mt-2 mb-4">${q.question}</h4>
+                        <div class="space-y-1">${optionsHTML}</div>
+                    </div>
+                `;
+            }).join('');
+
+            document.getElementById('content-display').innerHTML = `
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-2">${data.title}</h2>
+                    <p class="text-slate-600 text-sm">Review the official lecture notes below, then test your knowledge with the 5-question self-evaluation quiz.</p>
+                </div>
+
+                <!-- Notes Card -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 mb-8">
+                    <h3 class="text-lg font-bold text-indigo-900 mb-4">📖 Lecture Summary Notes</h3>
+                    <ul class="list-disc pl-5 text-sm space-y-2">${notesHTML}</ul>
+                </div>
+
+                <!-- Quiz Container -->
+                <div>
+                    <h3 class="text-lg font-bold text-indigo-900 mb-4">✍️ Topic Quiz (5 Questions)</h3>
+                    <div id="quiz-form-${key}">${quizHTML}</div>
+                    <button onclick="submitQuiz('${key}')" class="w-full bg-indigo-600 text-white py-3 rounded-xl font-medium hover:bg-indigo-700 transition shadow-sm">Submit Quiz & View Score</button>
+                    <div id="quiz-result-${key}" class="mt-6"></div>
+                </div>
+            `;
+        }
+
+        function selectAnswer(sectionKey, questionIndex, optionIndex) {
+            if(!userAnswers[sectionKey]) userAnswers[sectionKey] = [];
+            userAnswers[sectionKey][questionIndex] = optionIndex;
+        }
+
+        function submitQuiz(key) {
+            const data = courseData[key];
+            const answers = userAnswers[key];
+
+            if(answers.includes(null)) {
+                alert("Please answer all 5 questions before submitting your quiz!");
+                return;
+            }
+
+            let score = 0;
+            data.quiz.forEach((q, idx) => {
+                if(answers[idx] === q.answer) score++;
+            });
+
+            const percentage = (score / 5) * 100;
+            let feedbackColor = percentage >= 80 ? 'text-emerald-700 bg-emerald-50 border-emerald-200' : 'text-amber-700 bg-amber-50 border-amber-200';
+
+            document.getElementById(`quiz-result-${key}`).innerHTML = `
+                <div class="p-6 rounded-xl border ${feedbackColor} text-center shadow-sm">
+                    <h4 class="text-xl font-bold mb-1">Quiz Completed! 🎉</h4>
+                    <p class="text-lg">Your Score: <span class="font-ext500">${score} / 5</span> (${percentage}%)</p>
+                    <p class="text-xs mt-2 opacity-80">${percentage >= 80 ? 'Excellent grasp of the lecture notes!' : 'Review the summary notes above and try again to improve your score.'}</p>
+                    <button onclick="renderSectionContent('${key}')" class="mt-4 bg-white text-slate-700 border px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-50">Retake Quiz</button>
+                </div>
+            `;
+        }
+
+        // Initialize first tab on load
+        window.onload = () => switchSection('ch12');
+    </script>
+</body>
+</html>
