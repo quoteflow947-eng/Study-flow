@@ -1,4 +1,4 @@
-const CACHE_NAME = 'rbm-study-cache-v1';
+const CACHE_NAME = 'rbm-study-cache-v2';
 const urlsToCache = [
     './',
     './index.html',
@@ -32,7 +32,7 @@ self.addEventListener('fetch', event => {
     );
 });
 
-// Update Cache (activate)
+// Update Cache (activate) and clear old caches
 self.addEventListener('activate', event => {
     const cacheWhitelist = [CACHE_NAME];
     event.waitUntil(
@@ -40,6 +40,7 @@ self.addEventListener('activate', event => {
             return Promise.all(
                 cacheNames.map(cacheName => {
                     if (cacheWhitelist.indexOf(cacheName) === -1) {
+                        console.log('Deleting old cache:', cacheName);
                         return caches.delete(cacheName);
                     }
                 })
