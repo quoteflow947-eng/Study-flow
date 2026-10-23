@@ -1,4 +1,4 @@
-const CACHE_NAME = 'study-flow-v2';
+const CACHE_NAME = 'study-flow-v3';
 const ASSETS = [
   './index.html',
   './styles.css',
